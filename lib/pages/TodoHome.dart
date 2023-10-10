@@ -85,7 +85,7 @@ class _TodoHomeState extends State<TodoHome> {
             taskName: db.toDoList[index][0],
             taskCompleted: db.toDoList[index][1],
             onChanged: (value) => checkBoxChanged(value, index),
-            deleteFuntion: (context) => deleteTask,
+            deleteFuntion: (context) => deleteTask(index),
           );
         },
       ),
