@@ -22,7 +22,6 @@ class _TodoHomeState extends State<TodoHome> {
   //   ['Fast today', false],
   // ];
 
-  @override
   void initState() {
     // first time running app
     if ((_myBox.get("TODOLIST")) == null) {
@@ -72,6 +71,7 @@ class _TodoHomeState extends State<TodoHome> {
     db.updateDataBase();
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.yellow[200],
